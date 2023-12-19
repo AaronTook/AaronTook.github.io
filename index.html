@@ -29,24 +29,27 @@ body {font-family: "Roboto", sans-serif}
 
 <div class="w3-main" style="margin-left:250px;">
 
-<div id="myTop" class="w3-container w3-top w3-green w3-large">
+<div id="myTop" class="w3-container paddingless-small w3-top w3-green w3-large">
   <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
   <span id="myIntro" class="w3-hide">I'm AaronTook, Computer Science Student and Hobbyist</span></p>
 </div>
 
-<header class="w3-container w3-green" style="padding:16px 32px">
-  <h1 class="w3-xxxlarge"><p class="typewrite" data-period="2000" data-type='["Computer Science Student", "Programming Hobbyist", "Aspiring Software Developer" ]' data-starter="I'm AaronTook, "><span class="wrap"></span></h1>
+<header class="w3-container w3-green w3-hide-small" style="padding:16px 32px">
+  <h1 class="w3-xxxlarge"><p class="typewrite" data-period="2000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm AaronTook, "><span class="wrap"></span></h1>
   <script src="javascript/typewriter.js"></script>
 </header>
-
-<div class="w3-container" style="padding:32px">
+<header class="w3-container w3-green w3-hide-large w3-hide-medium">
+  <h1 class="w3-xlarge"><p class="typewrite" style="padding-top: 50px" data-period="2000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm AaronTook, "><span class="wrap"></span></h1>
+  <script src="javascript/typewriter.js"></script>
+</header>
+<div class="w3-container paddingless-small w3-padding-32">
 <div class="w3-row w3-margin w3-dark-grey">
 <div class="w3-container">
   <h2>Who am I?</h2>
   <p>Contrary to appearances, I am not actually a corgi named AaronTook!</p>
    <p>&nbsp;&nbsp;&nbsp;&nbsp;Instead, I am a Computer Science Student who is currently finishing up his senior year in High School with the intention of pursuing my Bachelors of Science in Computer Science starting next year. Additionally, I enjoy programming in my spare time, and I am constantly trying to grow as a developer by putting to use what I have already learned.</p>
    <p>&nbsp;&nbsp;&nbsp;&nbsp;When I am not writing code or doing homework, I also teach Tang Soo Do (a Korean martial art), work as a lifeguard, play strategy games, and spend time with family and friends.</p>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;My current plan is to enroll in and graduate from college in the next few years and eventually work as a software developer or software engineer. Even though I am not yet in colege, I am interested in learning as much about software and programming as I can, and I spend much of my free time putting that knowledge into action by developing projects. Unfortunately, I often end up disappointed with the end product or it was never intended for anyone else's use, so the projects here represent only a fraction of the code that I have written.<br>Feel free to contact me with any questions or comments that you have about the projects I have developed. <br>You can reach out me by email at <a href="mailto:flaskdoggo@gmail.com" style="text-decoration:none">flaskdoggo@gmail.com</a>.</p>
+   <p>&nbsp;&nbsp;&nbsp;&nbsp;My current plan is to enroll in and graduate from college in the next few years and eventually work as a software developer or software engineer. Even though I am not yet in college, I am interested in learning as much about software and programming as I can, and I spend much of my free time putting that knowledge into action by developing projects. Unfortunately, I often end up disappointed with the end product or it was never intended for anyone else's use, so the projects here represent only a fraction of the code that I have written.<br>Feel free to contact me with any questions or comments that you have about the projects I have developed. <br>You can reach out me by email at <a href="mailto:flaskdoggo@gmail.com" style="text-decoration:none">flaskdoggo@gmail.com</a>.</p>
    
 </div>
 
@@ -127,10 +130,12 @@ body {font-family: "Roboto", sans-serif}
 </div>
 <div class="w3-row">
   <div class="w3-col m6">
-    <a href="https://github.com/aarontook" class="w3-button w3-green w3-hover-light-green w3-hover-text-white" style="width:98.5%"><p><i class="fa fa-github fa-fw w3-text-white"> </i> Open a pull request on my GitHub!</p></a>
+    <a href="https://github.com/aarontook" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-small" style="width:98.5%"><p><i class="fa fa-github fa-fw w3-text-white"> </i> Open a pull request on my GitHub!</p></a>
+    <a href="https://github.com/aarontook" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-large" style="width:98.5%"><p><i class="fa fa-github fa-fw w3-text-white"> </i> Open a pull request!</p></a>
   </div>
   <div class="w3-col m6">
-	<a href="mailto:flaskdoggo@gmail.com" class="w3-button w3-green w3-hover-light-green w3-hover-text-white" style="width:98.5%"><p><i class="fa fa-envelope fa-fw w3-text-white"> </i> Email me at flaskdoggo@gmail.com</p> </a><br><br>
+	<a href="mailto:flaskdoggo@gmail.com" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-medium w3-hide-small" style="width:98.5%"><p><i class="fa fa-envelope fa-fw w3-text-white"> </i> Email me at flaskdoggo@gmail.com</p> </a><br><br>
+	<a href="mailto:flaskdoggo@gmail.com" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-large" style="width:98.5%"><p><i class="fa fa-envelope fa-fw w3-text-white"> </i> flaskdoggo@gmail.com</p> </a><br><br>
   </div>
 </div>
 </div>
@@ -167,7 +172,8 @@ body {font-family: "Roboto", sans-serif}
         <hr>
     </div>
     <div class="w3-container">
-    <a href="projects" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-center" style="width:100%"><p>Learn more about my other programming projects!</p></a>
+    <a href="projects" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-center w3-hide-medium w3-hide-small" style="width:100%"><p>Learn more about my other programming projects!</p></a>
+    <a href="projects" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-center w3-hide-large" style="width:100%"><p>View my projects!</p></a>
     <br><br>
     </div>
 </div>
@@ -222,6 +228,12 @@ function myAccordion(id) {
   }
 }
 </script>
-     
+ <style>
+@media only screen and (max-width: 600px) {
+  .paddingless-small {
+    padding: 0px;
+  }
+}
+</style>
 </body>
 </html> 
