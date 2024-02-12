@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Project - PyPersonalVault | AaronTook</title>
+<title>Project - PyCrypter | AaronTook</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
@@ -31,40 +31,29 @@ body {font-family: "Roboto", sans-serif}
 
 <div id="myTop" class="w3-container w3-top w3-green w3-large">
   <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-  <span id="myIntro" class="w3-hide">PyPersonalVault</span></p>
+  <span id="myIntro" class="w3-hide">PyCrypter</span></p>
 </div>
 
 <header class="w3-container w3-green" style="padding:48px 32px">
-  <h1 class="w3-xxxlarge">PyPersonalVault</h1>
+  <h1 class="w3-xxxlarge">PyCrypter</h1>
 </header>
 
 <div class="w3-container" style="padding:32px">
 
 <h2>Project Description</h2>
 
-<p>PyPersonalVault is a file encryption application built in Python. It allows users to securely encrypt their files (any filetypes except .py and PyPersonalVault-related files should work) with a password. Multiple seperate vaults can be created, with each having a seperate password.
-<br><br>The graphical user interface (GUI) is built with TKinter and CustomTkinter (pip install customtkinter). Cryptographic algorithms are sourced from the RSA, AES, and SHA3_256 portions of the PyCryptodome package (pip install pycryptodomex), and various Python Standard Library modules are used throughout. Many thanks to the developers of and contributors to these excellent tools!
-<br><br>Currently on version 1.0.0, PyPersonal Vault allows creation of multiple vaults, file encryption using a specific vault and password, and file decryption using the same vault and password used in encrypting the file.
-<br><br>Possible features for future updates to PyPersonalVault include:
-<ol>
-	<li>Displaying a list of all files encrypted by a specific PyPersonalVault.</li>
-	<li>Delete a PyPersonalVault.</li>
-	<li>Change username and/or password for a PyPersonalVault.</li>
-	<li>Encrypt and decrypt all files in a folder at once.</li>
-	<li>A command-line version of the application.</li>
-</ol>
-<br>
-The necessary files to run PyPersonalVault are:
+<p>PyCrypter is a light-weight alternative to <a href="py-personal-vault" style="text-decoration:none">my PyPersonalVault project</a>. Designed to be started from the command line with or without arguments, PyCrypter performs fast encryption or decryption using AES with a salted version of the password. Multiple files can be selected for encryption or decryption in one run of the program, and each will generate a file with the same name (".bin" is added for encrypted files) as the original.
+<br><br>
+The necessary files to run PyCrypter are:
 <ul>
-	<li>app.py</li>
-	<li>utils.py</li>
-	<li>application_data.json</li>
-	<li>license.txt</li>
+    <li>app.py</li>
+    <li>utils.py</li>
+    <li>encryption_utils.py</li>
 </ul>
-If any file is missing, the application will inform the user on startup and will provide a button that links to this project repository. If data is corrupted, a similar message will be displayed. All files are necessary for the project to permit the user to run core functionality.
-<br>You can run the project by executing the app.py file in the command line, IDE, or any other method used to run a Python file.
+Run the project by executing the app.py file in the command line, IDE, or any other method to run a Python file.<br>
+When launched from the command line, there are optional arguments for the mode (-e or -d) and password (any valid string). If these are not provided, user input will be gathered from the console.
 </p>
-<a href="https://github.com/AaronTook/PyPersonalVault/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a>
+<a href="https://github.com/AaronTook/PyCrypter" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a>
 
 <hr>
 <h2>Project Requirements</h2>
@@ -73,9 +62,9 @@ If any file is missing, the application will inform the user on startup and will
  <li>PyCryptoDome (<a href="https://pycryptodome.readthedocs.io/en/latest/src/installation.html" style="text-decoration:none" target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
  <li>CustomTkinter (<a href="https://customtkinter.tomschimansky.com/documentation/" style="text-decoration:none" target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
  <li>Tkinter (Python Standard Library)</li>
- <li>json (Python Standard Library)</li>
- <li>requests (Python Standard Library)</li>
- <li>webbrowser (Python Standard Library)</li>
+ <li>os (Python Standard Library)</li>
+ <li>sys (Python Standard Library)</li>
+ <li>threading (Python Standard Library)</li>
 </ul>
 
 
@@ -95,32 +84,31 @@ If any file is missing, the application will inform the user on startup and will
 <p>Many of my other programming projects <a href="../" style="text-decoration:none">can be found here</a>.</p>
 
 
-
 <div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
-<h3 class="w3-center">Python PDF Editor</h3>
+<h3 class="w3-center">PyPersonalVault</h3>
 <div class="w3-content" style="max-width:800px">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;This console-based application allows users to manipulate PDF files, with functionality such as encryption, decryption, file merging, and file compression.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;This GUI-based application allows users to create "vaults" with distinct passwords and use an individual vault to encrypt or decrypt files using the RSA system.</p>
 <div class="w3-row">
   <div class="w3-col m6">
-    <a href="python-pdf-editor" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
+    <a href="py-personal-vault" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
   </div>
   <div class="w3-col m6">
-    <a href="https://github.com/AaronTook/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code</a>
+    <a href="https://github.com/AaronTook/PyPersonalVault/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code</a>
   </div>
 </div>
 </div>
 </div>
 
 <div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
-<h3 class="w3-center">PyStock</h3>
+<h3 class="w3-center">PyFileTransfer</h3>
 <div class="w3-content" style="max-width:800px">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;This GUI-based application allows users to view and compare data about recent stock prices for any valid ticker over six pre-selected periods.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;A simple project built using Python's sockets module, designed for simple transfer of files between a server and client.</p>
 <div class="w3-row">
   <div class="w3-col m6">
-    <a href="pystock" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
+    <a href="py-file-transfer" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
   </div>
   <div class="w3-col m6">
-    <a href="https://github.com/AaronTook/PyStock/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code </a>
+    <a href="https://github.com/AaronTook/PyFileTransfer/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code </a>
   </div>
 </div>
 </div>
@@ -178,3 +166,4 @@ function myAccordion(id) {
      
 </body>
 </html> 
+
